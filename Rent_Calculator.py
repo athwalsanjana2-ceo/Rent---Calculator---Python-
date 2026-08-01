@@ -1,3 +1,13 @@
+# Inputs we need from the user
+# Total rent
+# Total food ordered for snacking
+# Electricity units spend
+# Charge per unit
+# Persons living in room/flat
+
+# Output
+# Total amount you've to pay is
+
 try:
     rent = int(input("Enter your hostel/flat rent = "))
     food = int(input("Enter the amount of food ordered = "))
@@ -8,9 +18,9 @@ try:
     total_bill = electricity_spend * charge_per_unit
     per_person = (food + rent + total_bill) / persons
 
-    print(f"\nEach person will pay = {per_person:.2f}")
+    print(f"Each person will pay = {per_person:.2f}")
 
 except ZeroDivisionError:
-    print("Persons 0 nahi ho sakte bhai!")
+    print("Persons 0 nahi ho sakte!")
 except ValueError:
-    print("Please number hi enter karo!")
+    print("Please sirf numbers enter karo!")
